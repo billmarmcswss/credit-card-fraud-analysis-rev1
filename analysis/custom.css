@@ -1,0 +1,14 @@
+h1.title {
+  font-size: 24px !important;
+  font-weight: normal !important;
+}
+
+h2.author, h3.date {
+  font-size: 16px !important;
+  font-weight: normal !important;
+}
+
+hr {
+  border: none !important;
+  margin: 0 !important;
+}
