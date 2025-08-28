@@ -14,6 +14,16 @@ account for sample size effects, rather than reacting to statistical noise from 
 
 *A comprehensive analysis of credit card fraud patterns using Bayesian statistical methods to identify geographic and merchant risk concentrations.*
 
+## Data Source
+
+This project uses the [`credit_card_fraud_dataset.csv`](https://www.kaggle.com/datasets/bhadramohit/credit-card-fraud-detection) dataset, sourced from Kaggle and published by Mohit Bhadra (2023).
+
+**Citation:**  
+Bhadra, M. (2023). Credit Card Fraud Detection [Data set]. Kaggle. https://www.kaggle.com/datasets/bhadramohit/credit-card-fraud-detection
+
+> The dataset is provided for educational and research purposes only. All rights belong to the original author/publisher.
+
+
 ## Project Highlights
 - **Dataset:** 100,000+ credit card transactions (October 2023 – October 2024)
 - **Methodology:** Bayesian risk modeling with geographic and temporal analysis
@@ -70,6 +80,7 @@ Developed a transferable analytical framework for ongoing fraud risk assessment 
 
 ## Questions or Feedback?
 Feel free to open an issue or contact me via [LinkedIn](https://www.linkedin.com/in/william-matthews-65a071232/) with questions, feedback, or collaboration requests.
+
 
 
 
