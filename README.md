@@ -34,3 +34,33 @@ Developed a transferable analytical framework for ongoing fraud risk assessment 
 - `/data/` – Dataset files
 - `/visualizations/` – Generated charts and maps
 - `/presentation/` – Final presentation materials
+
+## How to Run
+
+1. **Clone the repository:**
+    ```
+    git clone https://github.com/billmarmcswss/credit-card-fraud-analysis.git
+    cd credit-card-fraud-analysis
+    ```
+
+2. **Install required R packages:**  
+   *(Open R or RStudio, then run:)*  
+    ```r
+    # Required packages:
+    install.packages(c("readr", "dplyr", "ggplot2", "usmap", "scales", "tibble", "stringr", "purrr", "gridExtra", "zoo", "lubridate", "tidyr"))
+    ```
+
+3. **Access the analysis:**  
+    - Main analysis scripts are in `/analysis/`.
+    - Run the main `.R` or `.Rmd` file (e.g., `fraud_analysis.Rmd`) for the full workflow, including data cleaning, modeling, and visualization.
+    - Data files are in `/data/`.
+
+4. **Outputs:**  
+    - Visualizations will be generated in `/visualizations/`.
+    - Reports and presentations can be found in `/presentation/`.
+
+> **Note:**  
+> Some datasets may be too large for GitHub. If required data is missing, please see the README in `/data/` for download instructions or contact the author.
+
+
+
