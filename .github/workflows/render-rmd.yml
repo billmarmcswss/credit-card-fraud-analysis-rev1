@@ -16,8 +16,11 @@ jobs:
           sudo apt-get install -y pandoc
       - name: Install packages
         run: |
-          Rscript -e 'install.packages(c("rmarkdown", "tidyverse", "knitr", "ggplot2", "readr", "dplyr", "lubridate"))'
+          Rscript -e 'install.packages(c(
+            "readr", "dplyr", "ggplot2", "usmap", "scales",
+            "tibble", "stringr", "purrr", "gridExtra", "zoo",
+            "lubridate", "tidyr", "knitr", "rmarkdown"
+          ))'
       - name: Render Rmd
         run: |
-         Rscript -e 'rmarkdown::render("analysis/Capstone_Report.Rmd")'
-
+          Rscript -e 'rmarkdown::render("analysis/Capstone_Report.Rmd")'
