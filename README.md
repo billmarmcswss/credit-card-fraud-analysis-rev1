@@ -62,5 +62,15 @@ Developed a transferable analytical framework for ongoing fraud risk assessment 
 > **Note:**  
 > Some datasets may be too large for GitHub. If required data is missing, please see the README in `/data/` for download instructions or contact the author.
 
+## Limitations and Next Steps
+
+- The dataset, while comprehensive, is limited to a single year of transactions. Broader timeframes could reveal longer-term trends.
+- Merchant names and locations are anonymized; more detailed merchant info could yield deeper insights.
+- Future work: Integrate additional data sources, test other statistical or machine learning models, and deploy as a real-time fraud monitoring tool.
+
+## Questions or Feedback?
+Feel free to open an issue or contact me via [LinkedIn](https://www.linkedin.com/in/william-matthews-65a071232/) with questions, feedback, or collaboration requests.
+
+
 
 
