@@ -19,5 +19,5 @@ jobs:
           Rscript -e 'install.packages(c("rmarkdown", "tidyverse", "knitr", "ggplot2", "readr", "dplyr", "lubridate"))'
       - name: Render Rmd
         run: |
-          Rscript -e 'rmarkdown::render("Capstone_Report.Rmd")'
+         Rscript -e 'rmarkdown::render("analysis/Capstone_Report.Rmd")'
 
