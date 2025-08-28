@@ -13,7 +13,7 @@ that account for sample size effects, rather than reacting to statistical noise 
 
 A comprehensive analysis of credit card fraud patterns using Bayesian statistical methods to identify geographic and merchant risk concentrations.
 
-## Project Overview
+## Project Highlights
 - **Dataset**: 100,000+ credit card transactions (October 2023 - October 2024)
 - **Methodology**: Bayesian risk modeling with geographic and temporal analysis
 - **Key Finding**: Framework successfully identified risk patterns across multiple dimensions
@@ -33,5 +33,6 @@ Developed transferable analytical framework for ongoing fraud risk assessment th
 - `/data/` - Dataset files
 - `/visualizations/` - Generated charts and maps
 - `/presentation/` - Final presentation materials
+
 
 
