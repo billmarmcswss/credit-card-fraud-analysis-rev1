@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  capstone-analysis:
+    build: .
+    container_name: capstone_project
+    volumes:
+      - ./output:/app/output
+      - ./data:/app/data
+      - ./visualizations:/app/visualizations
+      - ./presentation:/app/presentation
+      - ./documentation:/app/documentation
+      - ./analysis:/app/analysis
+    environment:
+      - R_LIBS_USER=/usr/local/lib/R/site-library
