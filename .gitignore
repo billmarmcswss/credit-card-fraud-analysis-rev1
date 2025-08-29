@@ -1,4 +1,14 @@
+
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+=======
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+output/
+.DS_Store
+Thumbs.db
+

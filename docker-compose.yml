@@ -13,3 +13,14 @@ services:
       - ./analysis:/app/analysis
     environment:
       - R_LIBS_USER=/usr/local/lib/R/site-library
+=======
+services:
+  capstone_project:
+    build: .
+    container_name: capstone_project
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: >
+      R -e "rmarkdown::render('analysis/Capstone_Report.Rmd', output_dir = 'output')"
+

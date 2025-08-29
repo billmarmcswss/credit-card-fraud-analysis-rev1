@@ -1,0 +1,43 @@
+name: Render Rmd
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+
+      # Install all system libraries, including mapping dependencies
+      - name: Install Pandoc and system libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc build-essential \
+            libcurl4-openssl-dev libssl-dev libxml2-dev \
+            libgdal-dev libgeos-dev libproj-dev libudunits2-dev
+
+      # --- HERE is the new step! ---
+      - name: Diagnostic usmapdata install
+        run: |
+          Rscript -e 'install.packages("usmapdata", dependencies=TRUE, repos="https://cloud.r-project.org")'
+
+      # The rest of your steps go here...
+      - name: Install packages
+        run: |
+          Rscript -e 'install.packages(c(
+            "remotes", "devtools",
+            "readr", "dplyr", "ggplot2", "scales",
+            "tibble", "stringr", "purrr", "gridExtra", "zoo",
+            "lubridate", "tidyr", "knitr", "rmarkdown"
+          ))'
+
+      - name: Install usmap
+        run: |
+          Rscript -e 'install.packages("usmap", dependencies=TRUE, repos="https://cloud.r-project.org")'
+
+      - name: Render Rmd
+        run: |
+          Rscript -e 'rmarkdown::render("analysis/Capstone_Report.Rmd", quiet = FALSE)'

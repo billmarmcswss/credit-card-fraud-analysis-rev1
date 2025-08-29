@@ -4,6 +4,20 @@
 I developed a fraud risk assessment framework using Bayesian statistical methods to analyze over 100,000 credit card transactions. The challenge was that raw fraud rates can be misleading—a merchant with one fraud case out of five transactions shows 20%, but that's less reliable than a merchant with 50 cases out of 1,000 transactions at 5%. My Bayesian approach combined prior knowledge about overall fraud patterns with observed data to generate statistically-adjusted risk scores. The analysis identified New York as the highest-risk state and revealed significant merchant-level risk variations—some merchants showed fraud rates 3–4 times higher than average.
 
 With larger datasets, this framework would yield even more refined patterns and a clearer picture of fraud dynamics. The methodology creates actionable intelligence for fraud prevention teams by providing reliable risk estimates that account for sample size effects, rather than reacting to statistical noise from small datasets.
+=======
+I developed a fraud risk assessment framework using Bayesian statistical methods to analyze over 100,000 credit card transactions. The 
+challenge was that raw fraud rates can be misleading—a merchant with one fraud case out of five transactions shows 20%, but that's 
+less reliable than a merchant with 50 cases out of 1,000 transactions at 5%. My Bayesian approach combined prior knowledge about 
+overall fraud patterns with observed data to generate statistically-adjusted risk scores. The analysis identified New York as the 
+highest-risk state and revealed significant merchant-level risk variations—some merchants showed fraud rates 3–4 times higher than 
+average.
+
+With larger datasets, this framework would yield even more refined patterns and a clearer picture of fraud dynamics. 
+The methodology creates actionable intelligence for fraud prevention teams by providing reliable risk estimates that 
+account for sample size effects, rather than reacting to statistical noise from small datasets.
+
+**Intended audience:** Fraud analytics teams, business intelligence professionals, and financial risk managers
+>>>>>>> 5ba9b1ae0d887f0ea0cfc47b2f79f803897fab6c
 
 *A comprehensive analysis of credit card fraud patterns using Bayesian statistical methods to identify geographic and merchant risk concentrations.*
 
@@ -26,6 +40,7 @@ Bhadra, M. (2023). Credit Card Fraud Detection [Data set]. Kaggle. https://www.k
 - Geographic hotspot analysis identifying NY as highest-risk state
 - Merchant risk stratification revealing 3–4x risk variations
 - Temporal pattern detection showing seasonal fraud cycles
+- For a detailed description of data cleaning and transformation, see the scripts in the `/analysis/` folder.
 
 ## Business Impact
 Developed a transferable analytical framework for ongoing fraud risk assessment that adapts to current data rather than relying on static assumptions.
