@@ -17,13 +17,16 @@ jobs:
       - name: Install packages
         run: |
           Rscript -e 'install.packages(c(
+            "remotes", "devtools",
             "readr", "dplyr", "ggplot2", "scales",
             "tibble", "stringr", "purrr", "gridExtra", "zoo",
             "lubridate", "tidyr", "knitr", "rmarkdown"
           ))'
-      - name: Install usmap with verbose output
+      - name: Try installing usmap (diagnostic)
         run: |
           Rscript -e 'install.packages("usmap", dependencies=TRUE, repos="https://cloud.r-project.org")'
+          Rscript -e 'sessionInfo()'
+          Rscript -e 'installed.packages()[,"Package"]'
       - name: Render Rmd
         run: |
           Rscript -e 'rmarkdown::render("analysis/Capstone_Report.Rmd")'
